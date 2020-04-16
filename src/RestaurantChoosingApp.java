@@ -1,18 +1,14 @@
 
 
 public class RestaurantChoosingApp {
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		VeganRestaurant.Info.printMenu();
 		SushiRestaurant.Info.printMenu();
 	}
-
 }
 
 //###################### RESTAURANT CLASSES ##########################
-class SuperRestaurant {
-	
+class SuperRestaurant {	
 	static class InfoRestaurant {
 		static void print(double menuPrice, double specialMenuPrice) {
 	    	
@@ -24,12 +20,11 @@ class SuperRestaurant {
 	}
 }
 
-class Menu {
-	
+class Menu {	
 	static int getDiscount(int portions) {
     	int discount = 0;
     	if(portions%5 == 0) 
-    		discount = 10 * portions/5;      //скидка 10% на каждую пятую порцию
+    		discount = 10 * portions/5;      //Г±ГЄГЁГ¤ГЄГ  10% Г­Г  ГЄГ Г¦Г¤ГіГѕ ГЇГїГІГіГѕ ГЇГ®Г°Г¶ГЁГѕ
     	return discount;
     }
 	
@@ -39,8 +34,7 @@ class Menu {
     }
 }
 
-class VeganRestaurant extends SuperRestaurant {
-	
+class VeganRestaurant extends SuperRestaurant {	
 	static class Info extends InfoRestaurant {
 		static void printName() {
 	    	System.out.printf("############## Vegan Pure Restaurant #############\n"); 
@@ -68,8 +62,7 @@ class VeganRestaurant extends SuperRestaurant {
 		    }
 	}
 }
-class SushiRestaurant extends SuperRestaurant {
-	
+class SushiRestaurant extends SuperRestaurant {	
 	static class Info extends InfoRestaurant {
 		static void printName() {
 	    	System.out.printf("############## Sushi Mini Restaurant ##############\n"); 
